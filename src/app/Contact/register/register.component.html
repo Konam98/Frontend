@@ -1,0 +1,80 @@
+<html>
+
+<head></head>
+
+<body>
+
+
+  <form>
+    <div class="container">
+      <h1>Register Here</h1>
+      <hr>
+      <p>Please fill in this form to create an account.</p>
+
+      <!-- <label for="fname"><b>First Name</b></label> -->
+      <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+
+      <!-- <label for="lname"><b>Last Name</b></label> -->
+      <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required>
+
+      <!-- <label for="sque"><b>Security Question</b></label> -->
+      <!-- <input type="text" placeholder="Select Security Question" name="sque" id="sque" required> -->
+
+
+      <div class="dropdown">
+        <p>
+
+          <select class="security" name="security3">
+
+            <option value="0" disabled selected hidden>Select a Security Question</option>
+
+            <option value="1">What is your favourite Car ?</option>
+
+            <option value="2">What is your favorite Color ?</option>
+
+            <option value="3">Your Surname ?</option>
+
+            <option value="4">Your Pet Name ?</option>
+
+            <option value="5">Yours Mother Maiden Name ?</option>
+
+          </select>
+
+        </p>
+
+      </div>
+
+
+
+
+      <!-- <label for="sans"><b>Security Answer</b></label> -->
+      <input type="text" placeholder="Enter Answer" name="sans" id="sans" required>
+
+      <!-- <label for="mobno"><b>Mobile Number</b></label> -->
+      <input type="text" placeholder="Enter Mobile Number" name="mobno" id="mobno" required>
+
+      <!-- <label for="email"><b>Email</b></label> -->
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      <!--
+      <label for="psw"><b>Password</b></label> -->
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+      <!-- <label for="psw-repeat"><b>Confirm Password</b></label> -->
+      <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+
+      <hr>
+
+
+      <button type="submit" class="registerbtn">Submit</button>
+      <div class="formend">
+        <p>Already have an account ? <a routerLink="../homepage">Sign In</a>.</p>
+
+      </div>
+    </div>
+
+
+  </form>
+
+</body>
+
+</html>

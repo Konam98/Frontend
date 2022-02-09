@@ -1,0 +1,59 @@
+<div class="container">
+
+  <table class="table">
+
+    <thead>
+
+      <tr>
+
+        <th>contactId</th>
+
+        <th>contactName</th>
+
+        <th>contactNumber</th>
+
+        <th>contactEmail</th>
+
+        <th>contactAddress</th>
+
+        <th>userId</th>
+
+        <th>Actions</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let todo of contactArray">
+
+        <td>{{todo.contactId}}</td>
+
+        <td>{{todo.contactName}}</td>
+
+        <td>{{todo.contactNumber}}</td>
+
+        <td>{{todo.contactEmail}}</td>
+
+        <td>{{todo.contactAddress}}</td>
+
+        <td>{{todo.userId}}</td>
+         <td>
+
+
+          <button type="button" class="btn btn-link">Edit</button>
+          <button type="button" class="btn btn-link" (click)="deleteContact(todo.contactId)">Delete</button>
+
+        </td>
+
+      </tr>
+      <button type="button" class="btn btn-link" ><a routerLink="../contactinfo">Add</a></button>
+      <router-outlet></router-outlet>
+    </tbody>
+
+  </table>
+
+   <!-- <button type="button" class="btn btn-success" (click)="listTodos()">Create</button>  -->
+
+</div>
