@@ -18,7 +18,7 @@ COPY package*.json /app/
  
  
 # Install dependencies
-RUN npm install
+RUN npm i || :
  
  
  
